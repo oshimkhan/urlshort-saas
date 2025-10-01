@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  mongo:
+    image: mongo:7
+    restart: always
+    ports:
+      - '27017:27017'
+    volumes:
+      - mongo_data:/data/db
+
+  backend:
+    build: ./backend
+    restart: always
+    ports:
+      - '4000:4000'
+    environment:
+      - MONGODB_URI=mongodb://mongo:27017/urlshort
+      - JWT_SECRET=${JWT_SECRET}
+      - STRIPE_SECRET_KEY=${STRIPE_SECRET_KEY}
+      - STRIPE_WEBHOOK_SECRET=${STRIPE_WEBHOOK_SECRET}
+      - FRONTEND_URL=${FRONTEND_URL}
+      - SHORT_DOMAIN=${SHORT_DOMAIN}
+    depends_on:
+      - mongo
+
+  frontend:
+    build: ./frontend
+    restart: always
+    ports:
+      - '5173:5173'
+    environment:
+      - VITE_API_URL=${VITE_API_URL}
+      - VITE_SOCKET_URL=${VITE_SOCKET_URL}
+    depends_on:
+      - backend
+
+volumes:
+  mongo_data:
