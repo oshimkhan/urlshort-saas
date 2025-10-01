@@ -125,7 +125,7 @@ urlshort-saas/
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/urlshort-saas.git
+git clone https://github.com/oshimkhan/urlshort-saas.git
 cd urlshort-saas
 
 # Install backend dependencies
@@ -285,7 +285,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 👨‍💻 **Developer**
 
 **Oseem Pathan**
-- **GitHub**: [@yourusername](https://github.com/yourusername)
+- **GitHub**: [@oshimkhan](https://github.com/oshimkhan)
 - **LinkedIn**: [Your LinkedIn Profile](https://linkedin.com/in/yourprofile)
 - **Email**: oshimpathan8@gmail.com
 - **Portfolio**: [Your Portfolio Website](https://yourportfolio.com)
@@ -306,8 +306,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **⭐ Star this repository if you found it helpful!**
 
-[![GitHub stars](https://img.shields.io/github/stars/yourusername/urlshort-saas?style=social)](https://github.com/yourusername/urlshort-saas)
-[![GitHub forks](https://img.shields.io/github/forks/yourusername/urlshort-saas?style=social)](https://github.com/yourusername/urlshort-saas)
+[![GitHub stars](https://img.shields.io/github/stars/oshimkhan/urlshort-saas?style=social)](https://github.com/oshimkhan/urlshort-saas)
+[![GitHub forks](https://img.shields.io/github/forks/oshimkhan/urlshort-saas?style=social)](https://github.com/oshimkhan/urlshort-saas)
 
 </div>
 - Input validation
